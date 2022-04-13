@@ -1,0 +1,270 @@
+#pragma once
+
+enum class BG
+{
+	HALLWAY,		// 복도
+	ROOM301,		// 301호
+	ROOM302,		// 302호
+	ROOM303,		// 303호(시작위치)
+	ROOM304,		// 304호
+	SECRETROOM,		// 비밀방
+
+	TITLE,            // 타이틀
+	GAMEOVER,			//게임오버
+	ENDING,            // 엔딩
+	ENDING2,            // 엔딩
+
+	INTROHALL,            // 인트로 복도
+	INTRO303,            // 인트로
+
+	BGNUM
+};
+
+enum class OBJ
+{
+	BUCKET,		// 양동이
+	CHARM,		// 부적
+	HANGDEAD,	// 목 메단 시체
+	BOOK,		// 책(책상 위)
+	SWITCH,		// 전등 스위치
+	BAG,		// 가방
+	DEADBODY,	// 시체(칼)
+	NOTEBOOK,	// 책상(컴퓨터)
+	CAMERA,		// 촬영장비
+	ALTAR,		// 재단
+	TOILET,		// 화장실
+	FIREHYDRANT,	// 소화전
+	BOARD,		//게시판
+	MAGICCIRCLE,      //마법진
+	CANDLE_FIRE_L,      //촛불 왼쪽
+	CANDLE_FIRE_R,      //촛불 오른쪽
+	VENT,   //환풍구
+
+
+	DOOR,         // 현관문(공통)
+	DOOR301,      // 301호 문
+	DOOR302,      // 302호 문
+	DOOR303,      // 303호 문
+	DOOR304,      // 304호 문
+	SECRETDOOR,   // 비밀 문
+	ESCAPE,       // 탈출구
+
+	INTRO303,       // 인트로
+
+	OBJNUM
+};
+
+enum class UI
+{
+	TITLE_START,	//타이틀 게임시작
+	TITLE_EXIT,		//타이틀 게임종료
+	TITLE_ARROW,	//타이틀 화살표
+
+	INVEN_SLOTS,	//인벤토리
+	INVEN_ARROW,	//인벤토리 화살표
+
+	ITEM_CROWBAR,	//아이템 빠루
+	ITEM_SDCARD,	//아이템 SD 카드
+	ITEM_KNIFE,		//아이템 칼
+	ITEM_KEYSET,	//아이템 열쇠꾸러미
+	ITEM_BUCKET,	//아이템 양동이
+	ITEM_BONEKEY,	//아이템 뼈 열쇠
+
+	UINUM
+};
+
+enum class PLAYER
+{
+	IDLE_L,
+	IDLE_R,
+	RUN_L,
+	RUN_R,
+
+	STATENUM
+};
+
+enum class MONSTER
+{
+	RUN_L,
+	RUN_R,
+
+	STATENUM
+};
+
+enum class SCENE
+{
+	TITLE,		// 타이틀 씬
+	INTRO,		// 인트로 씬
+	INGAME,		// 인게임 씬
+	GAMEOVER,	// 게임오버 씬
+	ENDING,		// 엔딩 씬
+
+	SCENENUM
+};
+
+enum class ROOM
+{
+	HALLWAY,		// 복도
+	ROOM301,		// 301호
+	ROOM302,		// 302호
+	ROOM303,		// 303호(시작위치)
+	ROOM304,		// 304호
+	SECRETROOM,		// 비밀방
+
+	INTRO_HALLWAY = 10,// 인트로 복도
+	INTRO_303,		// 인트로 303
+
+	ROOMNUM = SECRETROOM + 2
+};
+
+enum class SCR_COLOR
+{
+	WHITE,
+	GREY,
+	RED,
+	GREEN,
+
+	COLORNUM
+};
+
+enum class SCR_ID
+{
+	STORY_INTRO_1,
+	STORY_INTRO_2,
+	STORY_INTRO_3,
+	STORY_INTRO_4,
+
+	STORY_1_1,
+	STORY_1_2,
+	STORY_1_3,
+	STORY_1_4,
+
+	STORY_2_1,
+	STORY_2_2,
+
+	STORY_3_1,
+	STORY_3_2,
+	STORY_3_3,
+
+	STORY_4_1,
+	STORY_4_2,
+	STORY_4_3,
+	STORY_4_4,
+	STORY_4_5,
+	STORY_4_6,
+
+	STORY_5_1,
+	STORY_5_2,
+	STORY_5_3,
+	STORY_5_4,
+	STORY_5_5,
+	STORY_5_6,
+	STORY_5_7,
+	STORY_5_8,
+	STORY_5_9,
+
+	STORY_6_1,
+	STORY_6_2,
+	STORY_6_3,
+	STORY_6_4,
+	STORY_6_5,
+
+	STORY_7_1,
+	STORY_7_2,
+	STORY_7_3,
+	STORY_7_4,
+	STORY_7_5,
+	STORY_7_6,
+
+	STORY_END_1,
+	STORY_END_STAFF,
+
+	INTER_BOOK,
+	INTER_BOARD,
+
+	EVENT_MESSAGE_1,
+	EVENT_MESSAGE_2,
+	EVENT_MESSAGE_3,
+	EVENT_MESSAGE_4,
+	EVENT_MESSAGE_5,
+
+	DEBUG,
+
+	NORMAL_1,
+	NORMAL_2,
+	NORMAL_3,
+	NORMAL_4,
+	NORMAL_5,
+
+	IDNUM
+};
+
+enum class INFO_ID
+{
+	SEARCH_BAG,
+	SEARCH_HANGDEAD,
+	SEARCH_DIARY,
+	SEARCH_DEADGIRL,
+	SEARCH_CAMERA,
+	SEARCH_COMPUTER,
+	SEARCH_FIREHOSE,
+	SEARCH_CHARM,
+	SEARCH_BUCKET,
+	SEARCH_TOILET,
+	SEARCH_ALTAR,
+	SEARCH_VENT,
+	SEARCH_BOARD,
+
+	INTER_SWITCH,
+	INTER_DOOR,
+	INTER_ESC,
+	INTER_COMPUTER,
+	INTER_TOILET,
+	INTER_ALTAR,
+
+	TO_HALLWAY,
+	TO_301,
+	TO_302,
+	TO_303,
+	TO_304,
+	TO_SECRET,
+	TO_ESC,
+
+	INFONUM
+};
+
+enum class AUDIO
+{
+	BGM_RAIN,
+	BGM_WIND,
+
+	EFS_BAG,
+	EFS_EMPTY_BUCKET,
+	EFS_CHAMR_MELT,
+
+	EFS_DOOR_OPEN,
+	EFS_HYDRANT_OPEN,
+	
+	EFS_KEY_CHARMING,
+	EFS_KEY_SKELETON,
+	EFS_KEY_UNLOCKING,
+
+	EFS_KNIFE_HIT,
+	EFS_PAPER,
+	EFS_SWICH,
+	EFS_WATER_FLOW,
+
+	EFS_PHONE_CLOSE,
+	EFS_PHONE_RING,
+	EFS_SCREAMING,
+
+	HUMAN_WALK_L,
+	HUMAN_WALK_R,
+
+	MONSTER_ROAR,
+	MONSTER_WALK,
+
+	SDCARD,
+
+	AUDIONUM
+};

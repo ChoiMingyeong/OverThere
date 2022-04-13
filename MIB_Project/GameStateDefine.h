@@ -1,0 +1,17 @@
+#pragma once
+
+#define GET_CROWBAR_		0x0001
+#define GET_KEYS_			0x0002
+#define GET_KNIFE_			0x0004
+#define GET_SDMEMORY_		0x0008
+#define GET_BONEKEY_		0x0010
+#define GET_EMPTYBUCKET_	0x0020
+#define GET_FULLBUCKET_		0x0040
+
+#define USE_CROWBAR_		0x0080
+#define USE_KEYS_			0x0100
+#define USE_KNIFE_			0x0200
+#define USE_SDMEMORY_		0x0400
+#define USE_BONEKEY_		0x0800
+#define USE_EMPTYBUCKET_	0x1000
+#define USE_FULLBUCKET_		0x2000

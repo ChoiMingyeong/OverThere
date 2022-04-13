@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MIB_Project", "MIB_Project.vcxproj", "{6647628C-9EB4-4DBB-940C-8375BB66263D}"
+	ProjectSection(ProjectDependencies) = postProject
+		{D6A3730F-B890-4ED3-B369-7B77FAA0EFF8} = {D6A3730F-B890-4ED3-B369-7B77FAA0EFF8}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MIB_Engine", "..\MIB_Engine\MIB_Engine.vcxproj", "{D6A3730F-B890-4ED3-B369-7B77FAA0EFF8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6647628C-9EB4-4DBB-940C-8375BB66263D}.Debug|x86.ActiveCfg = Debug|Win32
+		{6647628C-9EB4-4DBB-940C-8375BB66263D}.Debug|x86.Build.0 = Debug|Win32
+		{6647628C-9EB4-4DBB-940C-8375BB66263D}.Release|x86.ActiveCfg = Release|Win32
+		{6647628C-9EB4-4DBB-940C-8375BB66263D}.Release|x86.Build.0 = Release|Win32
+		{D6A3730F-B890-4ED3-B369-7B77FAA0EFF8}.Debug|x86.ActiveCfg = Debug|Win32
+		{D6A3730F-B890-4ED3-B369-7B77FAA0EFF8}.Debug|x86.Build.0 = Debug|Win32
+		{D6A3730F-B890-4ED3-B369-7B77FAA0EFF8}.Release|x86.ActiveCfg = Release|Win32
+		{D6A3730F-B890-4ED3-B369-7B77FAA0EFF8}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F0D7DD9B-E24E-4D8F-A392-6C9FBB4777EA}
+	EndGlobalSection
+EndGlobal
